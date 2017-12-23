@@ -12,9 +12,33 @@
 			type="text/css"
 			href="ztyles.css"
 			/>
+
+		<style>   
+			.title { 
+				font-family: Calibri; 
+				color: darkgrey ;
+
+			}
+			p {
+				font-family: sans-serif;
+
+			}
+			.newsfeed {background-color: white; padding: 20px; margin: 10px; margin-top: 40px; border-radius: 10px; border: 1px #535055 solid;
+
+			}
+			.likeButton {height: 80px; width: 100px;
+
+			}
+			.redStyling{
+				color: darkred;
+				background-color: red
+			}
+
+		</style>
 	</head>
 
-	<body>
+	<body style="background-color: pink">
+
 		<div>
 			<a href="index.html">
 			Home
@@ -28,10 +52,11 @@
 			Contact me
 			</a>
 		</div>
+<!-- ******************************************************* -->
 		<hr />
-		<div >
+		<div class="newsfeed">
 
-			<h1>
+			<h1 class="title">
 				This is my first webpage
 			</h1>
 			
@@ -44,7 +69,7 @@
 				</p>
 			</div>
 
-			<h2>
+			<h2 class="title">
 				This is the second heading
 			</h2>
 
@@ -55,6 +80,48 @@
 			<p>
 				the second paragraph
 			</p>
+			<button
+				class="likeButton">
+				Like
+			</button>
+		</div>
+
+
+
+
+
+		<!-- SECOND NEWSFEED BOX -->
+
+		<div class="newsfeed">
+
+			<h1 class="title">
+				This is my first webpage
+			</h1>
+			
+			<div >
+				<p >
+					Some content here for panel 1
+				</p>
+				<p >
+					Some content here for panel 2
+				</p>
+			</div>
+
+			<h2 class="title">
+				This is the second heading
+			</h2>
+
+			<p	>
+				The first paragraph the first paragraph the first paragraphthe first paragraph the first 				paragraph the first paragraph
+			</p>
+
+			<p>
+				the second paragraph
+			</p>
+			<button
+				class="likeButton " >
+				Like
+			</button>
 		</div>
 
 	</body>
