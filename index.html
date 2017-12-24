@@ -3,6 +3,11 @@
 	<head>
 		<title>This is my first Webpage</title>
 
+		<script
+			  src="http://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+
 		<link rel="stylesheet"
 			type="text/css"
 			href="bootstrap.css"
@@ -35,11 +40,40 @@
 			}
 
 		</style>
+		<script>
+			function hoi(buttonvar){
+				if (buttonvar == true){
+				var message ="YAAAAAY"
+				console.log(message)	
+				}
+				if (buttonvar == false){
+					var message="BOOOO"
+					console.log(message)
+				}	
+			}
+			var initial=0
+
+			function number(){
+				
+				initial=initial+1
+				console.log(initial)
+				
+			}
+		</script>
 	</head>
 
 	<body style="background-color: pink">
 
 		<div>
+			<button onclick="hoi(true)">
+				true
+			</button>
+			<button onclick="hoi(false)">
+				false
+			</button>
+			<button onclick="number()">
+				count
+			</button>
 			<a href="index.html">
 			Home
 			</a>
@@ -56,7 +90,7 @@
 		<hr />
 		<div class="newsfeed">
 
-			<h1 class="title">
+			<h1 class="title" id="toBeReplaced">
 				This is my first webpage
 			</h1>
 			
